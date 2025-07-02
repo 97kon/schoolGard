@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.testnosecurity.mapper.ApplyrecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.testnosecurity.pojo.Applyrecord">
+            <id property="anumbering" column="anumbering" jdbcType="VARCHAR"/>
+            <result property="aname" column="aname" jdbcType="VARCHAR"/>
+            <result property="asex" column="asex" jdbcType="VARCHAR"/>
+            <result property="aidnumber" column="aidnumber" jdbcType="VARCHAR"/>
+            <result property="aphone" column="aphone" jdbcType="VARCHAR"/>
+            <result property="acar" column="acar" jdbcType="VARCHAR"/>
+            <result property="aentertime" column="aentertime" jdbcType="TIMESTAMP"/>
+            <result property="aouttime" column="aouttime" jdbcType="TIMESTAMP"/>
+            <result property="adesc" column="adesc" jdbcType="VARCHAR"/>
+            <result property="astatus" column="astatus" jdbcType="INTEGER"/>
+            <result property="applisubtime" column="applisubtime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        anumbering,aname,asex,
+        aidnumber,aphone,acar,
+        aentertime,aouttime,adesc,
+        astatus,applisubtime
+    </sql>
+    <delete id="deleteByAnumbering"></delete>
+    <delete id="deleteByAnumberingBoolean"></delete>
+</mapper>

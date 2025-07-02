@@ -1,0 +1,177 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+h1{
+	color: #426696;
+	font-weight: 600;
+	font-size: 2rem;
+	opacity: 0.8;
+}
+h2,p{
+	color: #658ec6;
+	font-weight: 500;
+	
+	opacity: 0.8;
+}
+h3{
+	color: #426696;
+	font-weight: 600;
+	opacity: 0.8;
+}
+main{
+	font-family: "Poppins",sans-serif;
+	min-height: 100vh;
+	background: linear-gradient(to right top,#65dfc9,#6cdbed);
+	/*10-12 使白块glass位居屏幕正中*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.glass{
+	background: white;
+	min-height: 80vh;
+	width: 60%;
+	/*20 使白块glass变成毛玻璃的样式*/
+	background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+	/*22 使glass有圆角*/
+	border-radius: 2rem;
+	/*24 使glass图层位于两个球的上方*/
+	z-index: 2;
+	/*backdrop-filter这个属性给glass覆盖的后面的元素变得模糊*/
+	backdrop-filter: blur(2rem);
+	/*让里面的下一级的块级元素并列放置*/
+	display: flex;
+}
+/*右上和左下的两个背景球*/
+.circle1,.circle2{
+	background: white;
+	/*28 使球也是毛玻璃半透明类型*/
+	background: linear-gradient(to right bottom,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+	/*31-32 两个球的大小尺寸*/
+	height: 15rem;
+	width: 15rem;
+	/*用绝对定位，下面的top和left是根据页面进行定位*/
+	position: absolute;
+	z-index: 1;
+	border-radius: 50%;
+}
+/*37-43 对球的位置进行定位*/
+.circle1{
+	top: 5%;
+	right: 15%;
+	
+}
+.circle2{
+	bottom: 5%;
+	left: 10%;
+}
+.dashboard{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	text-align: center;
+	background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+	border-radius: 2rem;
+}
+.link{
+	display: flex;
+	margin: 0rem 0rem;
+	padding: 1rem 5rem;
+	align-content: center;
+}
+.link h2{
+	padding: 0rem 2rem;
+	
+}
+.games{
+	flex: 2;
+	
+}
+.flex{
+	display: flex;
+}
+
+.pro{
+	background:linear-gradient(to right top, #65dfc9, #6cdbed);
+	border-radius: 2rem;
+	color: white;
+	margin: 0rem 3.5rem;
+	padding: 1rem;
+	position: relative;
+}
+.pro img{
+	position: absolute;
+	top:10%;
+	right: 10%;
+}
+.pro h4{
+	width: 60%;
+	color: white;
+	font-family: 600;
+}
+/*GAMES */
+.status{
+	margin-bottom:1rem;
+}
+.status input{
+	background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+	border: none;
+	width: 50%;
+	padding: 0.5rem;
+	border-radius: 2rem;
+}
+.games{
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.card{
+	display: flex;
+	background: linear-gradient(to left top,rgba(255,255,255,0.8),rgba(255,255,255,0.5));
+	border-radius: 1rem;
+	margin: 3rem 1.5rem;
+	padding: 1rem;
+	box-shadow: 6px 6px 20px rgba(122,122,122,0.212);
+	/*使model和60%分开*/
+	justify-content: space-between;
+	text-align: right;
+}
+
+/*.progress{
+	background:linear-gradient(to right top, #65dfc9, #6cdbed);
+	width: 100%;
+	height: 25%;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+.progress::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgb(236,236,236);
+	position: absolute;
+	left: 60%;
+}*/
+.card-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/*.percentage{
+	font-weight: bold;
+	background:linear-gradient(to right top, #65dfc9, #6cdbed);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}*/
+.card img{
+	border-radius: 0.5rem;
+	margin-right: 10px;
+}
+

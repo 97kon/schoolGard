@@ -1,0 +1,29 @@
+@startuml
+
+title 设置爽约条件功能流程图
+
+start
+
+:管理员在管理端界面输入爽约次数阈值;
+
+:管理端发送HTTP请求到服务器端;
+note right: URL: /api/manage/settings/update
+
+:服务器端接收请求;
+note right: SettingsController
+
+:调用settingsService.updateNoshowTimes(threshold);
+note right: threshold为管理员输入的爽约次数阈值
+
+:服务层处理请求;
+note right: SettingsServiceImpl
+
+:更新数据库中的settings表;
+note right: settingsMapper.updateNoshowTimes(threshold)
+
+:返回操作结果给管理端;
+note right: Map<String, Object> result
+
+stop
+
+@enduml

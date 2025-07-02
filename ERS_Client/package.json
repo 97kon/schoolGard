@@ -1,0 +1,34 @@
+{
+    "id": "tuniao-tuniaoui",
+    "name": "图鸟UI",
+    "displayName": "图鸟UI",
+    "version": "1.6.0",
+    "description": "图鸟UI，是基于uni-app进行开发的UI框架，提供丰富的组件进行快速开发，已经支持APP、H5、微信小程序，包含常用表单组件、信息展示组件等，并提供丰富的酷炫页面模板。",
+    "keywords": [
+        "图鸟",
+        "酷炫",
+        "多图标",
+        "UI框架",
+        "组件库"
+    ],
+    "dcloudext": {
+        "type": "projecttemplate",
+        "sale": {
+            "regular": {
+                "price": "0.00"
+            },
+            "sourcecode": {
+                "price": "0.00"
+            }
+        }
+    },
+    "devDependencies": {
+        "@dcloudio/types": "^3.3.2",
+        "@dcloudio/uni-automator": "3.0.0-alpha-3090820231120001",
+        "@dcloudio/uni-cli-shared": "3.0.0-alpha-3090820231120001",
+        "@dcloudio/uni-stacktracey": "3.0.0-alpha-3090820231120001",
+        "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3090820231120001",
+        "@types/node": "^20.2.5",
+        "@types/wechat-miniprogram": "^3.4.8"
+    }
+}

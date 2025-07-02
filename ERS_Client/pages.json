@@ -1,0 +1,88 @@
+{
+  "easycom": {
+    "^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+  },
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/personalCenter/personalCenter",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/applyPages/applyPages",
+      "style": {
+        "navigationBarTitleText": "登记申请",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/myApply/myApply",
+      "style": {
+        "navigationBarTitleText": "我的申请",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/test/test",
+      "style": {
+        "navigationBarTitleText": "测试",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "default"
+      }
+    },
+    {
+      "path": "pages/keyboardDemo/keyboardDemo",
+      "style": {
+        "navigationBarTitleText": "键盘demo",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/updateUser/updateUser",
+      "style": {
+        "navigationBarTitleText": "修改用户信息",
+        "enablePullDownRefresh": true,
+        "navigationStyle": "default"
+      }
+    }
+  ],
+  "subPackages": [
+//    {
+//    "root": "tuniao-ui",
+//    "pages": [{
+//      "path": "components/tn-checkbox-group/tn-checkbox-group",
+//      "style": {
+//        "navigationBarTitleText": "tn-checkbox-group",
+//        "enablePullDownRefresh": true
+//      }
+//    }]
+//  }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ERS",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}

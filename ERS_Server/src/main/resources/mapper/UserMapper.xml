@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.testnosecurity.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.testnosecurity.pojo.User">
+            <id property="uid" column="uid" jdbcType="INTEGER"/>
+            <result property="uname" column="uname" jdbcType="VARCHAR"/>
+            <result property="upwd" column="upwd" jdbcType="VARCHAR"/>
+            <result property="usex" column="usex" jdbcType="VARCHAR"/>
+            <result property="uidnumber" column="uidnumber" jdbcType="VARCHAR"/>
+            <result property="uphone" column="uphone" jdbcType="VARCHAR"/>
+            <result property="upic" column="upic" jdbcType="VARCHAR"/>
+            <result property="blacklist" column="blacklist" jdbcType="INTEGER"/>
+            <result property="createtime" column="createtime" jdbcType="TIMESTAMP"/>
+            <result property="enblacklisttime" column="enblacklisttime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        uid,uname,upwd,
+        usex,uidnumber,uphone,
+        upic,blacklist,createtime,
+        enblacklisttime
+    </sql>
+</mapper>
